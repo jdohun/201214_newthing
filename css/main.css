@@ -1,0 +1,110 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.ObjectZone{
+  margin-left: 19px;
+  margin-top: 22px;
+  padding: 0;
+  height: 402px;
+  width: 632px;
+  border: solid 3px;
+}
+
+.ImageEffect{
+  width:100px;
+  height:100px;
+  background-size: cover;
+  transform: translate(-50%,-50%);
+}
+
+.Object{
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes image-effect-fire{
+  0%{
+    background-image: url("https://www.vhv.rs/dpng/d/38-389082_fire-effect-png-transparent-png.png");
+  }
+  25%{
+    background-image:url("https://www.pngfind.com/pngs/m/60-606128_flame-effect-free-clipart-hd-clipart-fire-effect.png");
+  }
+  50%{
+    background-image:url("https://c0.klipartz.com/pngpicture/56/88/gratis-png-la-llama-ardiente.png");
+  }
+  75%{
+    background-image: url("https://e7.pngegg.com/pngimages/187/648/png-clipart-orange-flame-fire-flame-orange-fresh-flame-effect-element-image-file-formats-effect.png");
+  }
+  100%{
+    background-image: url("https://www.vhv.rs/dpng/d/38-389082_fire-effect-png-transparent-png.png");
+  }
+}
+
+@keyframes image-effect-wind{
+  0%{
+    background-image: url("https://atlas-content-cdn.pixelsquid.com/stock-images/tornado-n1VD43D-600.jpg");
+  }
+  25%{
+    background-image: url("https://www.digitistic.pythm.com/images/art/tornado.png");
+  }
+  50%{
+    background-image: url("https://i.pinimg.com/originals/ab/4c/0f/ab4c0f101c116eb4c449054b5aafd698.jpg");
+  }
+  75%{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zhmuWdruUffC1fFYh7K3gRIYAN1oPx5UDQ&usqp=CAU");
+  }
+  100%{
+    background-image: url("https://atlas-content-cdn.pixelsquid.com/stock-images/tornado-n1VD43D-600.jpg");
+  }
+}
+/*
+@keyframes image-effect-wind{
+  0%{
+    background-image: url("");
+  }
+  25%{
+    background-image: url("");
+  }
+  50%{
+    background-image: url("");
+  }
+  75%{
+    background-image: url("");
+  }
+  100%{
+    background-image: url("");
+  }
+}*/
+
+.ImageOption{
+  background-size: cover;
+  transform: translate(-50%,-50%);
+  animation-name: small-to-big;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes small-to-big {
+  0%{
+    height: 0px;
+    width: 0px;
+  }
+  50%{
+    height: 200px;
+    width: 200px;
+  }
+  100%{
+    height: 0px;
+    width: 0px;
+  }
+}
